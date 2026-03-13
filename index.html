@@ -115,7 +115,20 @@
                 <br>
                 <input id="x" type="checkbox" name="social" value="x">
                 <label for="x">X (antigo Twitter)</label>
-
+                <br>
+                <Label for="musicstyle">Estilo Musical:</Label>
+                <input list="styletypes" id="musicstyle" name="usermusicstyle" type="text">
+                <datalist id="styletypes">
+                    <option value="Pop">
+                    <option value="Rock">
+                    <option value="Hip Hop">
+                    <option value="Eletrônica">
+                    <option value="Sertanejo">
+                    <option value="Funk">
+                </datalist>
+                <br>
+                <label for="favoriteColor">Cor Favorita:</label>
+                <input type="color" name="userfavorcolor" id="favoriteColor">
             </fieldset>
 
             <button type="submit">Enviar</button>
