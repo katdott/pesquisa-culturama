@@ -43,6 +43,23 @@ O formulário inclui validações básicas:
 - Formato de e-mail e telefone
 - Limite de idade (12-100 anos)
 
+## Acessibilidade
+
+O projeto implementa várias funcionalidades de acessibilidade para garantir que o formulário seja utilizável por pessoas com deficiências:
+
+- **Estrutura Semântica**: Uso de elementos HTML semânticos como `<main>`, `<header>`, `<section>`, `<fieldset>` e `<legend>` para organizar o conteúdo de forma lógica.
+- **Labels Associados**: Todos os campos de entrada possuem labels com o atributo `for` correspondente ao `id` do input, facilitando a navegação por leitores de tela.
+- **Atributos ARIA**: 
+  - `aria-describedby` para associar descrições auxiliares a campos específicos (telefone e upload de foto).
+  - `aria-label` nos botões para descrever sua função.
+  - `role="alert"` na página de sucesso para anunciar mensagens importantes aos leitores de tela.
+- **Texto Alternativo**: Imagens possuem atributo `alt` com descrições adequadas.
+- **Atributo Lang**: O idioma da página é definido como português brasileiro (`lang="pt-br"`).
+- **Tipos de Input Adequados**: Uso de tipos específicos como `email`, `tel`, `date`, `number`, `color` e `file` para melhorar a experiência em dispositivos móveis e assistivos.
+- **Validação Visual**: Bordas vermelhas para campos inválidos e verdes para válidos, além de mensagens de ajuda.
+- **Navegação por Teclado**: O formulário é totalmente navegável via teclado, com foco visível nos elementos interativos.
+- **Contraste e Legibilidade**: Fontes e cores escolhidas para garantir boa legibilidade.
+
 ## Observações
 
 - Este é um projeto estático sem backend; os dados do formulário são enviados via GET para a página de sucesso, mas não são processados ou armazenados.
