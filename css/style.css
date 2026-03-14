@@ -57,6 +57,16 @@ p {
 input,
 select,
 textarea {
+label {
+    display: inline-block;
+    margin-bottom: 5px;
+}
+
+p{
+    margin-bottom: 10px;
+}
+
+input, select, textarea {
   width: 100%;
   padding: 10px;
   margin-bottom: 20px;
@@ -120,4 +130,29 @@ button[type="submit"]:hover {
 
 button[type="reset"]:hover {
   background-color: red;
+  padding:  0 5px;
+}
+
+input:invalid, select:invalid, textarea:invalid {
+  border-color: red;
+}
+input:valid, select:valid, textarea:valid {
+  border-color: green;
+}   
+
+button {
+    background-color: #000000;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover{
+    background-color: green;
+}
+
+button[type="reset"]:hover{
+    background-color: red;
 }
