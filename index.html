@@ -17,7 +17,7 @@
     <main>
         <header>
             <img src="logo-culturama.png" alt="Logo da Culturama">
-            <h1>Pesquisa Online</h1>
+            <h1>Pesquisa De Opinião</h1>
         </header>
         <section>
             <form action="" method="get">
@@ -40,7 +40,8 @@
 
                     <label for="userPhoneNumber">Telefone:</label>
                     <input id="userPhoneNumber" type="tel" name="userPhoneNumber" pattern="[0-9]{11}"
-                        placeholder="11999999999" required>
+                        placeholder="DDD + número sem espaços" aria-describedby="phoneHelp" required>
+                    <small id="phoneHelp">Preencha com 11 dígitos no formato: DDD + número sem espaços ou hífens</small>
                     <br>
 
                     <label for="userImage">Upload de Foto:</label>
@@ -163,10 +164,9 @@
                 <fieldset>
                     <legend>Confirmações</legend>
                     <input type="checkbox" name="userLgpd" id="userLgpdTerms" value="acepted" required>
-                    <label for="userLgpdTerms">Eu aceito participar da pesquisa/label>
-                        <br>
-                        <input type="checkbox" name="userGetResult" id="getResult" value="acepted">
-                        <label for="getResult">Desejo receber os resultados por email</label>
+                    <label for="userLgpdTerms">Eu aceito participar da pesquisa</label> <br>
+                    <input type="checkbox" name="userGetResult" id="getResult" value="acepted">
+                    <label for="getResult">Desejo receber os resultados por email</label>
                 </fieldset>
                 <button type="submit">Enviar</button>
                 <button type="reset">Limpar</button>
