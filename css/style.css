@@ -1,3 +1,4 @@
+/* 1. Reset e Estilos Globais */
 * {
   margin: 0;
   padding: 0;
@@ -17,7 +18,6 @@ main {
 
 header {
   text-align: center;
-  /* centraliza em linha */
   margin-bottom: 20px;
 }
 
@@ -29,6 +29,7 @@ h1 {
   font-family: "Fjalla One", sans-serif;
 }
 
+/* 2. Formulário*/
 form {
   background-color: #ffffff;
   padding: 15px;
@@ -53,25 +54,20 @@ p {
   margin-bottom: 10px;
 }
 
+label {
+  display: inline-block;
+  margin-bottom: 5px;
+}
 
+/* 3. Inputs e Campos de Texto */
 input,
 select,
 textarea {
-label {
-    display: inline-block;
-    margin-bottom: 5px;
-}
-
-p{
-    margin-bottom: 10px;
-}
-
-input, select, textarea {
   width: 100%;
   padding: 10px;
   margin-bottom: 20px;
   border: 1px solid #cccccc;
-  border-radius: 5px
+  border-radius: 5px;
 }
 
 textarea {
@@ -88,11 +84,6 @@ input[type="color"] {
   padding: 0 5px;
 }
 
-label {
-  margin-bottom: 5px;
-  display: inline-block;
-}
-
 input[type="tel"],
 input[type="file"] {
   margin-bottom: 0;
@@ -103,6 +94,7 @@ small {
   margin-bottom: 20px;
 }
 
+/* 4. Validação */
 input:invalid,
 select:invalid,
 textarea:invalid {
@@ -115,6 +107,7 @@ textarea:valid {
   border-color: green;
 }
 
+/* 5. Botões */
 button {
   background-color: #000000;
   color: white;
@@ -122,6 +115,7 @@ button {
   border: none;
   border-radius: 5px;
   cursor: pointer;
+  transition: background-color 0.3s ease;   /*para o hover ficar suave */
 }
 
 button[type="submit"]:hover {
@@ -130,29 +124,4 @@ button[type="submit"]:hover {
 
 button[type="reset"]:hover {
   background-color: red;
-  padding:  0 5px;
-}
-
-input:invalid, select:invalid, textarea:invalid {
-  border-color: red;
-}
-input:valid, select:valid, textarea:valid {
-  border-color: green;
-}   
-
-button {
-    background-color: #000000;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-button[type="submit"]:hover{
-    background-color: green;
-}
-
-button[type="reset"]:hover{
-    background-color: red;
 }
